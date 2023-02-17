@@ -33,3 +33,9 @@ void TestRandomNumVec(std::vector<int>& vec, const int vecSize, const int minNum
 	TestPrintVec(vec, 20, "New Numbers:");
 	return;
 }
+
+bool TestCheckVecForSort(const std::vector<int>& vec)
+{
+	if (vec.size() > 2)return true;
+	return false;
+}

@@ -10,3 +10,5 @@ void TestPrintVec(const std::vector<int>& vec, const int col = 20, std::string i
 
 //Generating random numbers and store them in the vector.
 void TestRandomNumVec(std::vector<int>& vec, const int vecSize = 20, const int minNum = 0, const int maxNum = 100);
+
+bool TestCheckVecForSort(const std::vector<int>& vec);
