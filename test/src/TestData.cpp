@@ -34,8 +34,10 @@ void TestRandomNumVec(std::vector<int>& vec, const int vecSize, const int minNum
 	return;
 }
 
-bool TestCheckVecForSort(const std::vector<int>& vec)
+void TestSwap(int& a, int& b)
 {
-	if (vec.size() > 2)return true;
-	return false;
+	a ^= b;
+	b ^= a;
+	a ^= b;
 }
+

@@ -3,3 +3,12 @@
 
 //Insertion sort
 void InsertionSort(std::vector<int>& vec);
+
+//Bubble sort
+void BubbleSort(std::vector<int>& vec);
+
+//Selection sort
+void SelectionSort(std::vector<int>& vec);
+
+//Merge sort
+void MergeSort(std::vector<int>& vec);

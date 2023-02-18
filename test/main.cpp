@@ -5,8 +5,14 @@ int main()
 {
 	std::vector<int> vec;
 	TestRandomNumVec(vec);
-	InsertionSort(vec);
-	TestPrintVec(vec, 20, "InsertionSort:");
+	//InsertionSort(vec);
+	//TestPrintVec(vec, 20, "InsertionSort:");
+	//BubbleSort(vec);
+	//TestPrintVec(vec, 20, "BubbleSort:");
+	//SelectionSort(vec);
+	//TestPrintVec(vec, 20, "SelectionSort:");
+	MergeSort(vec);
+	TestPrintVec(vec, 20, "MergeSort:");
 	system("pause");
 	return 0;
 }
