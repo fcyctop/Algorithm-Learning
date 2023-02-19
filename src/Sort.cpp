@@ -113,8 +113,39 @@ void QuickSort(std::vector<int>& vec, int low, int high)
 
 void QuickSort(std::vector<int>& vec)
 {
-	QuickSort(vec, 0, vec.size() - 1);
+	QuickSort(vec, 0, static_cast<int>(vec.size() - 1));
 }
 
 /*******************************************************/
+void MaxHeapify(std::vector<int>& vec, int index, int high)
+{
+	auto left = 2 * index + 1;
+	if (left > high) return;
+	auto right = 2 * index + 2;
 
+	auto maxNumIndex = index;
+	if (right <= high && vec[right] > vec[maxNumIndex]) maxNumIndex = right;
+	if (left <= high && vec[left] > vec[maxNumIndex]) maxNumIndex = left;
+
+	if (maxNumIndex != index) {
+		TestSwap(vec[maxNumIndex], vec[index]);
+		MaxHeapify(vec, maxNumIndex, high);
+	}
+}
+
+void BuildMaxHeap(std::vector<int>& vec)
+{
+	int&& high = static_cast<int>(vec.size() - 1);
+	for (int i = (high - 1) / 2; i >= 0; --i) {
+		MaxHeapify(vec, i, high);
+	}
+}
+
+void HeapSort(std::vector<int>& vec)
+{
+	BuildMaxHeap(vec);
+	for (int i = static_cast<int>(vec.size() - 1); i > 0; --i) {
+		TestSwap(vec[0], vec[i]);
+		MaxHeapify(vec, 0, i - 1);
+	}
+}

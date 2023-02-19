@@ -15,3 +15,6 @@ void MergeSort(std::vector<int>& vec);
 
 //Quick sort
 void QuickSort(std::vector<int>& vec);
+
+//Heap sort
+void HeapSort(std::vector<int>& vec);
