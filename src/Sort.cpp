@@ -82,3 +82,39 @@ void MergeSort(std::vector<int>& vec)
 {
 	MergeSort(vec, 0, vec.size() - 1);
 }
+
+/*******************************************************/
+int Partition(std::vector<int>& vec, int low, int high)
+{
+	auto randIndex = low + rand() % (high - low + 1);
+	TestSwap(vec[randIndex], vec[low]);
+	auto slow = low;
+	auto fast = slow + 1;
+	while (fast <= high) {
+		if (vec[fast] < vec[low]) {
+			if (++slow != fast) {
+				TestSwap(vec[fast], vec[slow]);
+			}
+		}
+		++fast;
+	}
+	TestSwap(vec[low], vec[slow]);
+	return slow;
+}
+
+void QuickSort(std::vector<int>& vec, int low, int high)
+{
+	if (low < high) {
+		auto pos = Partition(vec, low, high);
+		QuickSort(vec, low, pos - 1);
+		QuickSort(vec, pos + 1, high);
+	}
+}
+
+void QuickSort(std::vector<int>& vec)
+{
+	QuickSort(vec, 0, vec.size() - 1);
+}
+
+/*******************************************************/
+

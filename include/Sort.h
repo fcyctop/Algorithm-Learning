@@ -12,3 +12,6 @@ void SelectionSort(std::vector<int>& vec);
 
 //Merge sort
 void MergeSort(std::vector<int>& vec);
+
+//Quick sort
+void QuickSort(std::vector<int>& vec);

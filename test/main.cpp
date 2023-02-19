@@ -11,8 +11,10 @@ int main()
 	//TestPrintVec(vec, 20, "BubbleSort:");
 	//SelectionSort(vec);
 	//TestPrintVec(vec, 20, "SelectionSort:");
-	MergeSort(vec);
-	TestPrintVec(vec, 20, "MergeSort:");
+	//MergeSort(vec);
+	//TestPrintVec(vec, 20, "MergeSort:");
+	QuickSort(vec);
+	TestPrintVec(vec, 20, "QuickSort");
 	system("pause");
 	return 0;
 }

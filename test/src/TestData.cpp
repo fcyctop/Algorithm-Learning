@@ -36,6 +36,7 @@ void TestRandomNumVec(std::vector<int>& vec, const int vecSize, const int minNum
 
 void TestSwap(int& a, int& b)
 {
+	if (&a == &b)return;
 	a ^= b;
 	b ^= a;
 	a ^= b;
