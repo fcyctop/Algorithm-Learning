@@ -24,6 +24,9 @@
     <ClInclude Include="..\test\include\TestData.h">
       <Filter>test\include</Filter>
     </ClInclude>
+    <ClInclude Include="..\include\Divide-and-conquer.h">
+      <Filter>include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\Sort.cpp">
@@ -32,6 +35,9 @@
     <ClCompile Include="..\test\main.cpp" />
     <ClCompile Include="..\test\src\TestData.cpp">
       <Filter>test\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Divide-and-conquer.cpp">
+      <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
