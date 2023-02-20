@@ -149,3 +149,20 @@ void HeapSort(std::vector<int>& vec)
 		MaxHeapify(vec, 0, i - 1);
 	}
 }
+
+/*******************************************************/
+//Suppose the data range to be sorted is between 0 and 100
+void CountingSort(std::vector<int>& vec)
+{
+	constexpr int MAXVALUE = 101;
+	int cnt[MAXVALUE] = { 0 };
+	for (auto& x : vec) ++cnt[x];
+	vec.clear();
+	for (int i = 0; i < MAXVALUE; ++i) {
+		while (0 < cnt[i]--) {
+			vec.emplace_back(i);
+		}
+	}
+}
+
+/*******************************************************/

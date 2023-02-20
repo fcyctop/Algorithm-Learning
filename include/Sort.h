@@ -18,3 +18,6 @@ void QuickSort(std::vector<int>& vec);
 
 //Heap sort
 void HeapSort(std::vector<int>& vec);
+
+//Counting sort
+void CountingSort(std::vector<int>& vec);

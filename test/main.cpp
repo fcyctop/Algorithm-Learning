@@ -15,8 +15,10 @@ int main()
 	//TestPrintVec(vec, 20, "MergeSort:");
 	//QuickSort(vec);
 	//TestPrintVec(vec, 20, "QuickSort");
-	HeapSort(vec);
-	TestPrintVec(vec, 20, "HeapSort:");
+	//HeapSort(vec);
+	//TestPrintVec(vec, 20, "HeapSort:");
+	CountingSort(vec);
+	TestPrintVec(vec, 20, "CountingSort:");
 	system("pause");
 	return 0;
 }
