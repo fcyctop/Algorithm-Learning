@@ -34,6 +34,19 @@ void TestRandomNumVec(std::vector<int>& vec, const int vecSize, const int minNum
 	return;
 }
 
+void TestRandomNumVec2(std::vector<int>& vec, const int vecSize, const int minNum, const int maxNum)
+{
+	if (vecSize < 0) return;
+	time_t t;
+	srand((unsigned)time(&t) * rand());
+	vec.clear();
+	vec.reserve(vecSize);
+	for (int i = 0; i != vecSize; ++i) {
+		vec.emplace_back(minNum + rand() % (maxNum - minNum));
+	}
+	return;
+}
+
 void TestSwap(int& a, int& b)
 {
 	if (&a == &b)return;

@@ -1,12 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="include">
-      <UniqueIdentifier>{e3139c26-579d-4dca-91ad-e0da08e54a5a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src">
-      <UniqueIdentifier>{52e2ba71-5358-4c56-a544-d0ceaf72e5e5}</UniqueIdentifier>
-    </Filter>
     <Filter Include="test">
       <UniqueIdentifier>{c8b26ac7-8205-4af9-a910-3e628ef95ac1}</UniqueIdentifier>
     </Filter>
@@ -16,28 +10,52 @@
     <Filter Include="test\src">
       <UniqueIdentifier>{9b8abb11-cbbb-4d07-92d7-257c750a7f43}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Algorithm">
+      <UniqueIdentifier>{652b8ae6-a0cf-4f99-acc9-396a8d764dc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Algorithm\include">
+      <UniqueIdentifier>{e3139c26-579d-4dca-91ad-e0da08e54a5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Algorithm\src">
+      <UniqueIdentifier>{52e2ba71-5358-4c56-a544-d0ceaf72e5e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataStructure">
+      <UniqueIdentifier>{5a48f43c-5530-4f6d-a47c-59cbd815919f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataStructure\include">
+      <UniqueIdentifier>{b1378161-9a09-4840-a23d-1920282ad3c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataStructure\src">
+      <UniqueIdentifier>{cd49d897-3ea6-468e-a89e-016d440de54a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\include\Sort.h">
-      <Filter>include</Filter>
+      <Filter>Algorithm\include</Filter>
     </ClInclude>
     <ClInclude Include="..\test\include\TestData.h">
       <Filter>test\include</Filter>
     </ClInclude>
     <ClInclude Include="..\include\Divide-and-conquer.h">
-      <Filter>include</Filter>
+      <Filter>Algorithm\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Martix.h">
+      <Filter>DataStructure\include</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\Sort.cpp">
-      <Filter>src</Filter>
+      <Filter>Algorithm\src</Filter>
     </ClCompile>
     <ClCompile Include="..\test\main.cpp" />
     <ClCompile Include="..\test\src\TestData.cpp">
       <Filter>test\src</Filter>
     </ClCompile>
     <ClCompile Include="..\src\Divide-and-conquer.cpp">
-      <Filter>src</Filter>
+      <Filter>Algorithm\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Martix.cpp">
+      <Filter>DataStructure\src</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

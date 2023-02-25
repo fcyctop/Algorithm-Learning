@@ -157,12 +157,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\include\Martix.h" />
     <ClInclude Include="..\include\Divide-and-conquer.h" />
     <ClInclude Include="..\include\Sort.h" />
     <ClInclude Include="..\test\include\TestData.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\Divide-and-conquer.cpp" />
+    <ClCompile Include="..\src\Martix.cpp" />
     <ClCompile Include="..\src\Sort.cpp" />
     <ClCompile Include="..\test\main.cpp" />
     <ClCompile Include="..\test\src\TestData.cpp" />
