@@ -42,6 +42,9 @@
     <ClInclude Include="..\include\Martix.h">
       <Filter>DataStructure\include</Filter>
     </ClInclude>
+    <ClInclude Include="..\include\string-match.h">
+      <Filter>Algorithm\include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\Sort.cpp">
@@ -56,6 +59,9 @@
     </ClCompile>
     <ClCompile Include="..\src\Martix.cpp">
       <Filter>DataStructure\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\string-match.cpp">
+      <Filter>Algorithm\src</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
