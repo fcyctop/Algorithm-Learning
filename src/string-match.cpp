@@ -1,4 +1,5 @@
 #include<string-match.h>
+#include<vector>
 #include<assert.h>
 
 int BruteForceMatcher(const std::string& text, const std::string& match)
@@ -50,5 +51,39 @@ int RobinKarpMatcher(const std::string& text, const std::string& match, const in
 		}
 	}
 
+	return -1;
+}
+//===========================================================
+std::vector<int> ComputePrefixFunction(const std::string model)
+{
+	auto size = model.size();
+	std::vector<int> vec(size, -1);
+	int k = -1;
+	for (int i = 1; i < size; ++i) {
+		while (k > -1 && model[k + 1] != model[i]) {
+			k = vec[k];
+		}
+		if (model[k + 1] == model[i]) {
+			k += 1;
+		}
+		vec[i] = k;
+	}
+	return vec;
+}
+
+int KMPMatcher(const std::string& text, const std::string& model)
+{
+	auto tsize = text.size();
+	auto msize = model.size();
+	std::vector<int> vec = ComputePrefixFunction(model);
+	int k = -1;
+	for (int i = 0; i < tsize; ++i) {
+		while (k > -1 && model[k + 1] != text[i])
+			k = vec[k];
+		if (model[k + 1] == text[i])
+			k = k + 1;
+		if (k == msize - 1)
+			return static_cast<int>(i - msize + 1);
+	}
 	return -1;
 }

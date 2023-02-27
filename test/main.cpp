@@ -32,9 +32,9 @@ int main()
 	std::cout << n << std::endl;
 	std::cout << "==============" << std::endl;
 	std::cout << m * n << std::endl;*/
-	std::string src = "abcabdcbd";
-	std::string sub = "bdc";
-	auto n = RobinKarpMatcher(src, sub);
+	std::string src = "abcabababcdcbd";
+	std::string sub = "ababc";
+	auto n = KMPMatcher(src, sub);
 	std::cout << n << std::endl;
 	system("pause");
 	return 0;

@@ -2,7 +2,10 @@
 #include<iostream>
 
 //native string match
-int BruteForceMatcher(const std::string& src, const std::string& sub);
+int BruteForceMatcher(const std::string& text, const std::string& model);
 
 //hash search match
-int RobinKarpMatcher(const std::string& src, const std::string& sub, const int prime = 13);
+int RobinKarpMatcher(const std::string& text, const std::string& model, const int prime = 13);
+
+//Knuth-Morris-Pratt
+int KMPMatcher(const std::string& text, const std::string& model);
