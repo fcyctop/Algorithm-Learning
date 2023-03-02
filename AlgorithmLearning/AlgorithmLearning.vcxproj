@@ -159,6 +159,7 @@
   <ItemGroup>
     <ClInclude Include="..\include\Martix.h" />
     <ClInclude Include="..\include\Divide-and-conquer.h" />
+    <ClInclude Include="..\include\mystack.hpp" />
     <ClInclude Include="..\include\Sort.h" />
     <ClInclude Include="..\include\string-match.h" />
     <ClInclude Include="..\test\include\TestData.h" />

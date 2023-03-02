@@ -3,6 +3,7 @@
 #include<Divide-and-conquer.h>
 #include<string-match.h>
 #include<Martix.h>
+#include<mystack.hpp>
 
 int main()
 {
@@ -32,10 +33,16 @@ int main()
 	std::cout << n << std::endl;
 	std::cout << "==============" << std::endl;
 	std::cout << m * n << std::endl;*/
-	std::string src = "abcabababcdcbd";
+	/*std::string src = "abcabababcdcbd";
 	std::string sub = "ababc";
 	auto n = KMPMatcher(src, sub);
-	std::cout << n << std::endl;
+	std::cout << n << std::endl;*/
+	mystack<int> st;
+	st.push(1);
+	st.push(2);
+	st.push(4);
+	st.pop();
+	std::cout << st << std::endl;
 	system("pause");
 	return 0;
 }

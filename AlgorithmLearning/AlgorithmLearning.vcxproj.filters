@@ -45,6 +45,9 @@
     <ClInclude Include="..\include\string-match.h">
       <Filter>Algorithm\include</Filter>
     </ClInclude>
+    <ClInclude Include="..\include\mystack.hpp">
+      <Filter>DataStructure\include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\Sort.cpp">
